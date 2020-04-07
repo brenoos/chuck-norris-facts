@@ -1,10 +1,14 @@
 import React from 'react';
+import { Main } from './pages/Main';
+
+import GlobalStyles from './styles/global';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Chuck Norris</h1>
-    </div>
+    <>
+      <Main />
+      <GlobalStyles />
+    </>
   );
 }
 
