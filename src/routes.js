@@ -5,7 +5,7 @@ import Joke from './pages/Joke';
 
 const routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Categories} />
         <Route path="/joke" component={Joke} />
