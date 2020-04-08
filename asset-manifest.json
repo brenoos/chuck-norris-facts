@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/chuck-norris-facts/static/js/main.9a548803.chunk.js",
+    "main.js.map": "/chuck-norris-facts/static/js/main.9a548803.chunk.js.map",
+    "runtime-main.js": "/chuck-norris-facts/static/js/runtime-main.9c6f3663.js",
+    "runtime-main.js.map": "/chuck-norris-facts/static/js/runtime-main.9c6f3663.js.map",
+    "static/js/2.0ab81787.chunk.js": "/chuck-norris-facts/static/js/2.0ab81787.chunk.js",
+    "static/js/2.0ab81787.chunk.js.map": "/chuck-norris-facts/static/js/2.0ab81787.chunk.js.map",
+    "index.html": "/chuck-norris-facts/index.html",
+    "precache-manifest.f50b0cdbb8814aab5941fdfa47d5f308.js": "/chuck-norris-facts/precache-manifest.f50b0cdbb8814aab5941fdfa47d5f308.js",
+    "service-worker.js": "/chuck-norris-facts/service-worker.js",
+    "static/js/2.0ab81787.chunk.js.LICENSE.txt": "/chuck-norris-facts/static/js/2.0ab81787.chunk.js.LICENSE.txt",
+    "static/media/chuck-norris-cartoon.png": "/chuck-norris-facts/static/media/chuck-norris-cartoon.b8dd7bdf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c6f3663.js",
+    "static/js/2.0ab81787.chunk.js",
+    "static/js/main.9a548803.chunk.js"
+  ]
+}
