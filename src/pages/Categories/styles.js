@@ -17,16 +17,21 @@ export const StyledPaper = styled(Paper).attrs({ elevation: 10 })`
     height: 84%;
     overflow-x: auto;
 
+    a {
+      text-decoration: none;
+      color: #7b1fa2;
+    }
+
     li {
       padding: 15px 15px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
+      font-weight: bold;
 
-      & + li {
-        border-top: 1px solid #eee;
-      }
+      border-bottom: 1px solid #eee;
     }
   }
 `;

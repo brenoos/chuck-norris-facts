@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Typography from '@material-ui/core/Typography';
-import { getCategories } from '../../store/modules/facts';
+import { Link } from 'react-router-dom';
+import { getCategories, selectCategory } from '../../store/modules/facts';
 
 import {
   StyledPaper as Paper,
@@ -18,26 +19,33 @@ const Categories = () => {
   }));
 
   useEffect(() => {
-    dispatch(getCategories());
-  }, [dispatch]);
+    if (categories.length <= 0 || !categories) {
+      dispatch(getCategories());
+    }
+  }, [dispatch, categories]);
 
   return (
     <Paper>
-      <p>
-        <Typography variant="subtitle1">
-          Select an category to view a joke
-        </Typography>
-      </p>
+      <Typography variant="subtitle1" component="p">
+        Select an category to view a joke
+      </Typography>
+
       {loading && <CircularProgress />}
 
       {!loading && !error && (
         <ul>
           {categories.map((category) => (
-            <li key={category}>
-              <Typography variant="body1" component="span">
+            <Link to="/joke" key={category}>
+              <Typography
+                variant="body1"
+                component="li"
+                onClick={() => {
+                  dispatch(selectCategory(category));
+                }}
+              >
                 {category}
               </Typography>
-            </li>
+            </Link>
           ))}
         </ul>
       )}
